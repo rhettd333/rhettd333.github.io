@@ -8,7 +8,6 @@ Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGP
 
 Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a second ChatGPT ideation pass through the signed-in Codex channel, deduplicated against everything Done or already queued. One raw gated idea (a Boston Capital Strategy backlink) duplicated G6 and was dropped, and one gated item (G14, analytics) was added by Muse to keep the batch at 20.
 
-- A18 Portrait loading priority. The headshot carries the right loading hints (fetchpriority and decoding) so it arrives promptly without competing with essential resources. P6 E2 Rank 54.
 - A21 Production response checks. Scripted check that deployed HTML, CSS, icons, and images return the expected content types and encoding. P6 E2 Rank 54.
 - A19 Page weight budget. Set a transfer size budget for the published files and flag unexpected growth during weekly checks. P6 E3 Rank 51.
 - A20 Versioned asset references. A versioning convention for stylesheet and image references so returning visitors reliably receive updated assets after a change. P5 E3 Rank 41.
@@ -39,6 +38,7 @@ Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a secon
 
 ## Done
 
+- A18 Portrait loading priority. fetchpriority high and decoding async added to the headshot image tag, one-line diff, no copy or layout change. Commit 856ac85. Deploy success, live HTML serves both attributes, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A14 Redirect verification. scripts/check-redirects.py added (repo only, verified 404 live). The HTTP address returns a single 301 to the HTTPS homepage and the chain ends at 200 in one hop, 3 of 3 pass. Commit 5476150. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A15 Structured data validation. scripts/check-jsonld.py added (repo only, verified 404 live). JSON-LD parses, one Person and one WebSite node, unique ids, publisher matches the Person, and the Person image URL returns 200 live, 6 of 6 pass. Commit d91c7a9. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A22 Search crawler rendering check. scripts/check-rendering.py added (repo only, verified 404 live). All eight key text fragments are present in the raw served HTML with no scripting, 8 of 8 pass. Commit 49e08a1. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
