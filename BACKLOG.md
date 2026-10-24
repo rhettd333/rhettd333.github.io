@@ -6,7 +6,6 @@ Scoring: Priority 1 to 10, Effort 1 to 10, Rank = (P x 10) - (E x 3). Lanes: Rea
 
 Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGPT ideation pass through the signed-in Codex channel (deduplicated against v1, which already carries the title, meta description, canonical, basic Person JSON-LD, sitemap, robots, and stable section ids from the raw list).
 
-- A6 Structured data expansion. Expand the Person JSON-LD into a graph with a WebSite node, the page url, and a stable @id for the Person node, using only facts already on the page. P7 E2 Rank 64.
 - A2 Accessibility and performance pass. Contrast audit, focus order, reduced motion, page weight check. P6 E3 Rank 51.
 - A7 Favicon set completeness. Generate PNG favicons (32, 192, 512) and an apple-touch-icon from the existing favicon.svg, reference them in the head, and add them to the deploy workflow allowlist. P5 E2 Rank 44.
 - A9 404 alignment. Bring 404.html fully in line with the homepage: same header with nav, same footer with the views-own line, and relative asset paths so it works at any depth. P5 E2 Rank 44.
@@ -33,6 +32,7 @@ Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGP
 
 ## Done
 
+- A6 Structured data expansion. JSON-LD is now a graph: Person node with @id and url, plus a WebSite node naming the Person as publisher. Parses as JSON with both nodes, metadata check still 5 of 5. Commit 27089b7. Deploy success, screenshots clean. Oct 23, 2026.
 - A5 Social preview completion. Twitter card tags, theme-color, and og:site_name added to the head, reusing the existing og text word for word. Commit e80e48f. Deploy success, live tags verified, metadata check still 5 of 5, screenshots clean. Oct 23, 2026.
 - A8 Metadata consistency check. scripts/check-metadata.py added (repo only, verified 404 live). Five checks pass locally: name across title, og:title, and JSON-LD, jobTitle exactly Consultant, canonical equals og:url, sameAs matches the body profile links, meta description carries the name. Commit d5aca25. Deploy success, screenshots clean. Oct 23, 2026.
 - A4 Identity verification links. rel="me" added to the Boston Capital Strategy, LinkedIn, and X links. Commit 62b803d. Live verified 200 with three rel="me" links, BRIEF.md 404, screenshots clean. Oct 23, 2026.
