@@ -14,16 +14,21 @@ Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a secon
 
 ## Ready Gated
 
+Round 3 seeding, Oct 24, 2026: 3 new items (G15 to G17) from a competitor assessment of drorpoleg.com, antonyslumbers.com, and jamesdearsley.co.uk (research-notes/competitor-assessment-2026-10-24.md) run through a ChatGPT pass through the signed-in Codex channel. ChatGPT was asked for 10 to 15 high value items and returned only these 3 as clearing the bar, rejecting the rest as duplicates of existing items or as violations of the non-commercial scope. Per the standing rule, the short list is the answer and was not padded.
+
+- G15 Compact dated public record in Background. Once a qualifying event exists, add up to three linked entries for verified talks, panels, bylines, or industry roles, replacing existing prose to preserve the word budget. Rhett approves each entry and link. Pattern borrowed: Slumbers dated timeline and Dearsley dated record strip (competitor assessment Oct 24, 2026). P9 E3 Rank 81.
 - G1 Confirm the applicable Deloitte requirements for both sites, including outside activities, publishing, independence, and any impression of a separate advisory business. Rhett handles this internally. P10 E3 Rank 71.
 - G3 Buy rhettdawson.com when Rhett is ready (availability and price checked first), point it at this site, and update canonical, Open Graph, and sitemap URLs in the same change. On hold by owner directive Oct 23, 2026: no domain yet. P9 E4 Rank 78.
 - G2 Approve the exact v1 biography copy, public links, and this draft MISSION.md. The v1 build ships as a draft under Rhett's build direction and this item records his word-level approval or edits. P9 E2 Rank 74.
 - G7 Name-search introduction refinement. Rhett approves a concise opening that makes his name, Boston location, current role, and focus immediately clear. Copy change, so gated. P9 E2 Rank 74.
 - G11 Search Console setup. Rhett approves ownership verification and sitemap submission so indexing and name-search visibility can be checked directly. Needs his account action. P8 E3 Rank 71.
+- G16 Organizer event page attribution. After an actual speaking or moderating appearance, ask the organizer to publish Rhett's full name, accurate role, and a link to this site alongside the event record. Rhett approves the attribution and makes the ask. Pattern borrowed: Poleg proof wall and the cross-site index-not-engine pattern (competitor assessment Oct 24, 2026). P8 E3 Rank 71.
 - G8 Background specificity. Rhett approves one concrete detail about his engineering background that adds context without expanding employer claims. P7 E2 Rank 64.
 - G9 Outside-work detail. Rhett approves one specific personal interest that gives new Boston contacts a natural conversation starter. P7 E2 Rank 64.
 - G10 Elsewhere link descriptions. Rhett approves brief explanations distinguishing the Boston Capital Strategy writing from the LinkedIn professional record. P7 E2 Rank 64.
 - G6 Add an author backlink on Boston Capital Strategy, "Written by Rhett Dawson", linking here, so ownership of the expert site is plain. P6 E3 Rank 51.
 - G14 Privacy-respecting analytics. Rhett approves a lightweight, cookie-free analytics setup so name-search traffic is visible. Any vendor choice is his. P6 E3 Rank 51.
+- G17 Earned third-party quote. When a substantive, attributable quote about a public contribution exists, consider one short excerpt with the speaker's permission and a source link inside Background, replacing equivalent self-description prose. Pattern borrowed: Slumbers attributed quotes (competitor assessment Oct 24, 2026). P6 E3 Rank 51.
 - G5 Add a short Now section saying what he is working on this season, refreshed by hand. Risk of going stale is the reason this is gated. P5 E4 Rank 38.
 - G13 Personal visual identity. Rhett approves a restrained typography and color direction that makes the page feel recognizably his while preserving its simplicity. P5 E5 Rank 35.
 - G12 Portrait retake. Rhett approves a replacement portrait with a clear brief for expression, framing, lighting, and background. Supersedes the studio backdrop version only if he prefers the retake. P5 E6 Rank 32.
