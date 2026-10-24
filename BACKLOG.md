@@ -6,6 +6,20 @@ Scoring: Priority 1 to 10, Effort 1 to 10, Rank = (P x 10) - (E x 3). Lanes: Rea
 
 Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGPT ideation pass through the signed-in Codex channel (deduplicated against v1, which already carries the title, meta description, canonical, basic Person JSON-LD, sitemap, robots, and stable section ids from the raw list).
 
+Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a second ChatGPT ideation pass through the signed-in Codex channel, deduplicated against everything Done or already queued. One raw gated idea (a Boston Capital Strategy backlink) duplicated G6 and was dropped, and one gated item (G14, analytics) was added by Muse to keep the batch at 20.
+
+- A16 Indexability smoke test. Scripted check that the deployed homepage returns 200 and carries no accidental noindex directive in its HTML or response headers. P9 E2 Rank 84.
+- A13 Canonical URL audit. Scripted check that the canonical link, og:url, JSON-LD urls, and sitemap entry all agree on the preferred HTTPS address. P8 E2 Rank 74.
+- A23 Weekly verification summary. One repo-only command that runs the existing check scripts and writes a dated pass and fail report for the weekly scrum. P8 E3 Rank 71.
+- A12 Robots guardrails audit. Scripted check that robots.txt permits crawling, references the sitemap, and that the sitemap parses and lists only the homepage. P7 E1 Rank 67.
+- A17 Layout shift prevention. Aspect ratio reserved in CSS for the headshot and any future image so the page stays stable while loading. P7 E2 Rank 64.
+- A22 Search crawler rendering check. Scripted check that the full introduction and section text appear in the initial served HTML with no scripting required. P7 E2 Rank 64.
+- A15 Structured data validation. Extend the repo checks to validate the JSON-LD graph: parses, unique node ids, Person and WebSite nodes connected, image URL live. P7 E3 Rank 61.
+- A14 Redirect verification. Scripted check that the HTTP address resolves to the HTTPS homepage without loops or unnecessary hops. P6 E2 Rank 54.
+- A18 Portrait loading priority. The headshot carries the right loading hints (fetchpriority and decoding) so it arrives promptly without competing with essential resources. P6 E2 Rank 54.
+- A21 Production response checks. Scripted check that deployed HTML, CSS, icons, and images return the expected content types and encoding. P6 E2 Rank 54.
+- A19 Page weight budget. Set a transfer size budget for the published files and flag unexpected growth during weekly checks. P6 E3 Rank 51.
+- A20 Versioned asset references. A versioning convention for stylesheet and image references so returning visitors reliably receive updated assets after a change. P5 E3 Rank 41.
 - A3 Print stylesheet so the page prints as a clean one-page bio. P3 E2 Rank 24.
 
 ## Ready Gated
@@ -13,8 +27,16 @@ Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGP
 - G1 Confirm the applicable Deloitte requirements for both sites, including outside activities, publishing, independence, and any impression of a separate advisory business. Rhett handles this internally. P10 E3 Rank 71.
 - G3 Buy rhettdawson.com when Rhett is ready (availability and price checked first), point it at this site, and update canonical, Open Graph, and sitemap URLs in the same change. On hold by owner directive Oct 23, 2026: no domain yet. P9 E4 Rank 78.
 - G2 Approve the exact v1 biography copy, public links, and this draft MISSION.md. The v1 build ships as a draft under Rhett's build direction and this item records his word-level approval or edits. P9 E2 Rank 74.
+- G7 Name-search introduction refinement. Rhett approves a concise opening that makes his name, Boston location, current role, and focus immediately clear. Copy change, so gated. P9 E2 Rank 74.
+- G11 Search Console setup. Rhett approves ownership verification and sitemap submission so indexing and name-search visibility can be checked directly. Needs his account action. P8 E3 Rank 71.
+- G8 Background specificity. Rhett approves one concrete detail about his engineering background that adds context without expanding employer claims. P7 E2 Rank 64.
+- G9 Outside-work detail. Rhett approves one specific personal interest that gives new Boston contacts a natural conversation starter. P7 E2 Rank 64.
+- G10 Elsewhere link descriptions. Rhett approves brief explanations distinguishing the Boston Capital Strategy writing from the LinkedIn professional record. P7 E2 Rank 64.
 - G6 Add an author backlink on Boston Capital Strategy, "Written by Rhett Dawson", linking here, so ownership of the expert site is plain. P6 E3 Rank 51.
+- G14 Privacy-respecting analytics. Rhett approves a lightweight, cookie-free analytics setup so name-search traffic is visible. Any vendor choice is his. P6 E3 Rank 51.
 - G5 Add a short Now section saying what he is working on this season, refreshed by hand. Risk of going stale is the reason this is gated. P5 E4 Rank 38.
+- G13 Personal visual identity. Rhett approves a restrained typography and color direction that makes the page feel recognizably his while preserving its simplicity. P5 E5 Rank 35.
+- G12 Portrait retake. Rhett approves a replacement portrait with a clear brief for expression, framing, lighting, and background. Supersedes the studio backdrop version only if he prefers the retake. P5 E6 Rank 32.
 
 ## Icebox
 
