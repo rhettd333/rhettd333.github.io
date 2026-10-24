@@ -4,8 +4,18 @@ Scoring: Priority 1 to 10, Effort 1 to 10, Rank = (P x 10) - (E x 3). Lanes: Rea
 
 ## Ready Autonomous
 
+Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGPT ideation pass through the signed-in Codex channel (deduplicated against v1, which already carries the title, meta description, canonical, basic Person JSON-LD, sitemap, robots, and stable section ids from the raw list).
+
+- A4 Identity verification links. Add rel="me" to the LinkedIn, X, and Boston Capital Strategy links in the Elsewhere section so the site and the profiles verify each other. P8 E1 Rank 77.
+- A8 Metadata consistency check. Add a small repo script (never published) that parses index.html and fails if the title, meta description, Open Graph fields, and Person JSON-LD disagree on name, job title, or profile URLs. P8 E4 Rank 68.
+- A5 Social preview completion. Add Twitter card meta tags (summary card, title, description) and a theme-color meta matching the paper background, and complete the Open Graph set with og:site_name. No new copy and no social image. P7 E2 Rank 64.
+- A6 Structured data expansion. Expand the Person JSON-LD into a graph with a WebSite node, the page url, and a stable @id for the Person node, using only facts already on the page. P7 E2 Rank 64.
 - A2 Accessibility and performance pass. Contrast audit, focus order, reduced motion, page weight check. P6 E3 Rank 51.
-- A1 Freshness and link check automation inside the weekly scrum. Broken links, stale role or title information, mobile layout look. P5 E2 Rank 44.
+- A7 Favicon set completeness. Generate PNG favicons (32, 192, 512) and an apple-touch-icon from the existing favicon.svg, reference them in the head, and add them to the deploy workflow allowlist. P5 E2 Rank 44.
+- A9 404 alignment. Bring 404.html fully in line with the homepage: same header with nav, same footer with the views-own line, and relative asset paths so it works at any depth. P5 E2 Rank 44.
+- A1 Freshness and link check automation inside the weekly scrum. Add a repo script (never published) the scrum can run: checks every outbound link on the page for a live response and greps the page for stale title signals (for example the word Senior appearing before June 2027). P5 E2 Rank 44.
+- A10 humans.txt. Add a small humans.txt utility file crediting the site owner and builder, linked from the head, and add it to the deploy workflow allowlist. Plain facts only, already public on the page. P4 E1 Rank 37.
+- A11 Sitemap freshness. Add a lastmod date to the single sitemap URL and keep it current with each published change. P4 E1 Rank 37.
 - A3 Print stylesheet so the page prints as a clean one-page bio. P3 E2 Rank 24.
 
 ## Ready Gated
