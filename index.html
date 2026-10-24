@@ -20,15 +20,28 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Rhett Dawson",
-    "jobTitle": "Consultant",
-    "worksFor": { "@type": "Organization", "name": "Deloitte" },
-    "address": { "@type": "PostalAddress", "addressLocality": "Boston" },
-    "sameAs": [
-      "https://www.linkedin.com/in/rhett-d-318785129/",
-      "https://x.com/RhettDawson",
-      "https://bostoncapitalstrategy.com"
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://rhettd333.github.io/#person",
+        "url": "https://rhettd333.github.io/",
+        "name": "Rhett Dawson",
+        "jobTitle": "Consultant",
+        "worksFor": { "@type": "Organization", "name": "Deloitte" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Boston" },
+        "sameAs": [
+          "https://www.linkedin.com/in/rhett-d-318785129/",
+          "https://x.com/RhettDawson",
+          "https://bostoncapitalstrategy.com"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://rhettd333.github.io/#website",
+        "url": "https://rhettd333.github.io/",
+        "name": "Rhett Dawson",
+        "publisher": { "@id": "https://rhettd333.github.io/#person" }
+      }
     ]
   }
   </script>
