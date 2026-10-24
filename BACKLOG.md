@@ -6,7 +6,6 @@ Scoring: Priority 1 to 10, Effort 1 to 10, Rank = (P x 10) - (E x 3). Lanes: Rea
 
 Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGPT ideation pass through the signed-in Codex channel (deduplicated against v1, which already carries the title, meta description, canonical, basic Person JSON-LD, sitemap, robots, and stable section ids from the raw list).
 
-- A1 Freshness and link check automation inside the weekly scrum. Add a repo script (never published) the scrum can run: checks every outbound link on the page for a live response and greps the page for stale title signals (for example the word Senior appearing before June 2027). P5 E2 Rank 44.
 - A10 humans.txt. Add a small humans.txt utility file crediting the site owner and builder, linked from the head, and add it to the deploy workflow allowlist. Plain facts only, already public on the page. P4 E1 Rank 37.
 - A11 Sitemap freshness. Add a lastmod date to the single sitemap URL and keep it current with each published change. P4 E1 Rank 37.
 - A3 Print stylesheet so the page prints as a clean one-page bio. P3 E2 Rank 24.
@@ -29,6 +28,7 @@ Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGP
 
 ## Done
 
+- A1 Freshness and link check automation. scripts/check-links.py added (repo only, verified 404 live). First full run: Boston Capital Strategy 200, X 200, LinkedIn WARN 999 (bot protection, by design), both freshness checks pass (no Senior Consultant text, JSON-LD jobTitle Consultant), exit 0. Commit 112f23f. Deploy success, screenshots clean. Oct 23, 2026.
 - A9 404 alignment. 404.html now carries the full homepage head (theme-color and the PNG favicon set included), the same header with nav pointing at the homepage fragments, and the same footer. Root-relative paths throughout so it works at any depth, and a missing URL was screenshot-verified rendering correctly on desktop and mobile. Commit 8a4e9a2. Deploy success, homepage screenshots clean. Oct 23, 2026.
 - A7 Favicon set completeness. favicon-32x32.png, icon-192x192.png, icon-512x512.png, and apple-touch-icon.png (180, opaque) generated with PIL in the favicon.svg design, referenced in the head, and added to the deploy allowlist. All four verified 200 live and the 512 icon visually matches the SVG. Commit 6f275af. Deploy success, screenshots clean. Oct 23, 2026.
 - A2 Accessibility and performance pass. Contrast verified: ink 13.58 to 1 and accent 5.60 to 1 on paper, both pass WCAG AA, no color changes. Reduced motion media query added. Total published weight 8,716 bytes, no performance changes needed. Commit 4c9ec72. Deploy success, screenshots clean. Oct 23, 2026.
