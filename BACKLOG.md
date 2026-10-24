@@ -8,7 +8,6 @@ Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGP
 
 Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a second ChatGPT ideation pass through the signed-in Codex channel, deduplicated against everything Done or already queued. One raw gated idea (a Boston Capital Strategy backlink) duplicated G6 and was dropped, and one gated item (G14, analytics) was added by Muse to keep the batch at 20.
 
-- A22 Search crawler rendering check. Scripted check that the full introduction and section text appear in the initial served HTML with no scripting required. P7 E2 Rank 64.
 - A15 Structured data validation. Extend the repo checks to validate the JSON-LD graph: parses, unique node ids, Person and WebSite nodes connected, image URL live. P7 E3 Rank 61.
 - A14 Redirect verification. Scripted check that the HTTP address resolves to the HTTPS homepage without loops or unnecessary hops. P6 E2 Rank 54.
 - A18 Portrait loading priority. The headshot carries the right loading hints (fetchpriority and decoding) so it arrives promptly without competing with essential resources. P6 E2 Rank 54.
@@ -42,6 +41,7 @@ Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a secon
 
 ## Done
 
+- A22 Search crawler rendering check. scripts/check-rendering.py added (repo only, verified 404 live). All eight key text fragments are present in the raw served HTML with no scripting, 8 of 8 pass. Commit 49e08a1. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A17 Layout shift prevention. aspect-ratio 800 / 1060 added to the headshot image rule in styles.css, so the layout space is reserved in CSS as well as by the HTML dimensions. One-line diff, no visual change. Commit 433786a. Deploy success, live CSS serves the new rule, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A12 Robots guardrails audit. scripts/check-robots.py added (repo only, verified 404 live). Robots permits crawling and references the sitemap, the sitemap is well formed and lists only the homepage, 4 of 4 pass. Commit 5edd857. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A23 Weekly verification summary. scripts/verify-all.py added (repo only, verified 404 live). Runs the four check scripts and prints a dated report. Full run: metadata 5 of 5, links 4 PASS and 1 WARN, indexability 3 of 3, canonical 5 of 5, overall PASS. One earlier run caught a transient network read error and reported FAIL correctly before the rerun passed. Commit c109748. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
