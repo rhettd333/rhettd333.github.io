@@ -6,7 +6,6 @@ Scoring: Priority 1 to 10, Effort 1 to 10, Rank = (P x 10) - (E x 3). Lanes: Rea
 
 Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGPT ideation pass through the signed-in Codex channel (deduplicated against v1, which already carries the title, meta description, canonical, basic Person JSON-LD, sitemap, robots, and stable section ids from the raw list).
 
-- A11 Sitemap freshness. Add a lastmod date to the single sitemap URL and keep it current with each published change. P4 E1 Rank 37.
 - A3 Print stylesheet so the page prints as a clean one-page bio. P3 E2 Rank 24.
 
 ## Ready Gated
@@ -27,6 +26,7 @@ Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGP
 
 ## Done
 
+- A11 Sitemap freshness. lastmod 2026-10-23 added to the single sitemap URL, XML validated, and the live sitemap serves the new element. Commit e8064e4. Deploy success, screenshots clean. Oct 23, 2026.
 - A10 humans.txt. humans.txt published with owner, location, and build facts only, linked from the head with rel author, and added to the deploy allowlist. Verified 200 live with the exact content. Commit 7f44780. Deploy success, screenshots clean. Oct 23, 2026.
 - A1 Freshness and link check automation. scripts/check-links.py added (repo only, verified 404 live). First full run: Boston Capital Strategy 200, X 200, LinkedIn WARN 999 (bot protection, by design), both freshness checks pass (no Senior Consultant text, JSON-LD jobTitle Consultant), exit 0. Commit 112f23f. Deploy success, screenshots clean. Oct 23, 2026.
 - A9 404 alignment. 404.html now carries the full homepage head (theme-color and the PNG favicon set included), the same header with nav pointing at the homepage fragments, and the same footer. Root-relative paths throughout so it works at any depth, and a missing URL was screenshot-verified rendering correctly on desktop and mobile. Commit 8a4e9a2. Deploy success, homepage screenshots clean. Oct 23, 2026.
