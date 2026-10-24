@@ -1,0 +1,5 @@
+# Rhett Dawson
+
+Site owner: Rhett Dawson
+Location: Boston, Massachusetts
+Build: Plain HTML and CSS, no framework
