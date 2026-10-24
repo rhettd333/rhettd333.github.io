@@ -13,7 +13,6 @@ Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGP
 - G1 Confirm the applicable Deloitte requirements for both sites, including outside activities, publishing, independence, and any impression of a separate advisory business. Rhett handles this internally. P10 E3 Rank 71.
 - G3 Buy rhettdawson.com when Rhett is ready (availability and price checked first), point it at this site, and update canonical, Open Graph, and sitemap URLs in the same change. On hold by owner directive Oct 23, 2026: no domain yet. P9 E4 Rank 78.
 - G2 Approve the exact v1 biography copy, public links, and this draft MISSION.md. The v1 build ships as a draft under Rhett's build direction and this item records his word-level approval or edits. P9 E2 Rank 74.
-- G4 Add one natural portrait. Needs a photo Rhett likes, owns the rights to, and approves for publication. P7 E3 Rank 61.
 - G6 Add an author backlink on Boston Capital Strategy, "Written by Rhett Dawson", linking here, so ownership of the expert site is plain. P6 E3 Rank 51.
 - G5 Add a short Now section saying what he is working on this season, refreshed by hand. Risk of going stale is the reason this is gated. P5 E4 Rank 38.
 
@@ -26,6 +25,7 @@ Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGP
 
 ## Done
 
+- G4 Headshot published. Photo supplied and approved by Rhett Oct 23, 2026, studio backdrop version prepared from his source photo. Headshot sits in the Introduction beside the intro copy on desktop and stacks on mobile, with srcset at 400 and 800 wide, explicit dimensions, and alt text "Rhett Dawson". og:image, twitter:image, and the JSON-LD Person image point at the 800 file. Commit bb375a8. Oct 23, 2026.
 - A11 Sitemap freshness. lastmod 2026-10-23 added to the single sitemap URL, XML validated, and the live sitemap serves the new element. Commit e8064e4. Deploy success, screenshots clean. Oct 23, 2026.
 - A10 humans.txt. humans.txt published with owner, location, and build facts only, linked from the head with rel author, and added to the deploy allowlist. Verified 200 live with the exact content. Commit 7f44780. Deploy success, screenshots clean. Oct 23, 2026.
 - A1 Freshness and link check automation. scripts/check-links.py added (repo only, verified 404 live). First full run: Boston Capital Strategy 200, X 200, LinkedIn WARN 999 (bot protection, by design), both freshness checks pass (no Senior Consultant text, JSON-LD jobTitle Consultant), exit 0. Commit 112f23f. Deploy success, screenshots clean. Oct 23, 2026.
