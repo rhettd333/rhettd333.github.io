@@ -8,7 +8,6 @@ Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGP
 
 Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a second ChatGPT ideation pass through the signed-in Codex channel, deduplicated against everything Done or already queued. One raw gated idea (a Boston Capital Strategy backlink) duplicated G6 and was dropped, and one gated item (G14, analytics) was added by Muse to keep the batch at 20.
 
-- A12 Robots guardrails audit. Scripted check that robots.txt permits crawling, references the sitemap, and that the sitemap parses and lists only the homepage. P7 E1 Rank 67.
 - A17 Layout shift prevention. Aspect ratio reserved in CSS for the headshot and any future image so the page stays stable while loading. P7 E2 Rank 64.
 - A22 Search crawler rendering check. Scripted check that the full introduction and section text appear in the initial served HTML with no scripting required. P7 E2 Rank 64.
 - A15 Structured data validation. Extend the repo checks to validate the JSON-LD graph: parses, unique node ids, Person and WebSite nodes connected, image URL live. P7 E3 Rank 61.
@@ -44,6 +43,7 @@ Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a secon
 
 ## Done
 
+- A12 Robots guardrails audit. scripts/check-robots.py added (repo only, verified 404 live). Robots permits crawling and references the sitemap, the sitemap is well formed and lists only the homepage, 4 of 4 pass. Commit 5edd857. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A23 Weekly verification summary. scripts/verify-all.py added (repo only, verified 404 live). Runs the four check scripts and prints a dated report. Full run: metadata 5 of 5, links 4 PASS and 1 WARN, indexability 3 of 3, canonical 5 of 5, overall PASS. One earlier run caught a transient network read error and reported FAIL correctly before the rerun passed. Commit c109748. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A13 Canonical URL audit. scripts/check-canonical.py added (repo only, verified 404 live). Canonical link, og:url, both JSON-LD urls, and the sitemap entry all agree on https://rhettd333.github.io/, 5 of 5 pass. Commit ca832be. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A16 Indexability smoke test. scripts/check-indexability.py added (repo only, verified 404 live). First live run passes 3 of 3: final status 200, no meta robots noindex, no X-Robots-Tag header. Commit 601d590. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
