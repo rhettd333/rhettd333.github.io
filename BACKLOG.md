@@ -8,7 +8,6 @@ Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGP
 
 Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a second ChatGPT ideation pass through the signed-in Codex channel, deduplicated against everything Done or already queued. One raw gated idea (a Boston Capital Strategy backlink) duplicated G6 and was dropped, and one gated item (G14, analytics) was added by Muse to keep the batch at 20.
 
-- A23 Weekly verification summary. One repo-only command that runs the existing check scripts and writes a dated pass and fail report for the weekly scrum. P8 E3 Rank 71.
 - A12 Robots guardrails audit. Scripted check that robots.txt permits crawling, references the sitemap, and that the sitemap parses and lists only the homepage. P7 E1 Rank 67.
 - A17 Layout shift prevention. Aspect ratio reserved in CSS for the headshot and any future image so the page stays stable while loading. P7 E2 Rank 64.
 - A22 Search crawler rendering check. Scripted check that the full introduction and section text appear in the initial served HTML with no scripting required. P7 E2 Rank 64.
@@ -45,6 +44,7 @@ Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a secon
 
 ## Done
 
+- A23 Weekly verification summary. scripts/verify-all.py added (repo only, verified 404 live). Runs the four check scripts and prints a dated report. Full run: metadata 5 of 5, links 4 PASS and 1 WARN, indexability 3 of 3, canonical 5 of 5, overall PASS. One earlier run caught a transient network read error and reported FAIL correctly before the rerun passed. Commit c109748. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A13 Canonical URL audit. scripts/check-canonical.py added (repo only, verified 404 live). Canonical link, og:url, both JSON-LD urls, and the sitemap entry all agree on https://rhettd333.github.io/, 5 of 5 pass. Commit ca832be. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A16 Indexability smoke test. scripts/check-indexability.py added (repo only, verified 404 live). First live run passes 3 of 3: final status 200, no meta robots noindex, no X-Robots-Tag header. Commit 601d590. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - G4 Headshot published. Photo supplied and approved by Rhett Oct 23, 2026, studio backdrop version prepared from his source photo. Headshot sits in the Introduction beside the intro copy on desktop and stacks on mobile, with srcset at 400 and 800 wide, explicit dimensions, and alt text "Rhett Dawson". og:image, twitter:image, and the JSON-LD Person image point at the 800 file. Commit bb375a8. Oct 23, 2026.
