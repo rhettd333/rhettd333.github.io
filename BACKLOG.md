@@ -6,7 +6,6 @@ Scoring: Priority 1 to 10, Effort 1 to 10, Rank = (P x 10) - (E x 3). Lanes: Rea
 
 Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGPT ideation pass through the signed-in Codex channel (deduplicated against v1, which already carries the title, meta description, canonical, basic Person JSON-LD, sitemap, robots, and stable section ids from the raw list).
 
-- A5 Social preview completion. Add Twitter card meta tags (summary card, title, description) and a theme-color meta matching the paper background, and complete the Open Graph set with og:site_name. No new copy and no social image. P7 E2 Rank 64.
 - A6 Structured data expansion. Expand the Person JSON-LD into a graph with a WebSite node, the page url, and a stable @id for the Person node, using only facts already on the page. P7 E2 Rank 64.
 - A2 Accessibility and performance pass. Contrast audit, focus order, reduced motion, page weight check. P6 E3 Rank 51.
 - A7 Favicon set completeness. Generate PNG favicons (32, 192, 512) and an apple-touch-icon from the existing favicon.svg, reference them in the head, and add them to the deploy workflow allowlist. P5 E2 Rank 44.
@@ -34,6 +33,7 @@ Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGP
 
 ## Done
 
+- A5 Social preview completion. Twitter card tags, theme-color, and og:site_name added to the head, reusing the existing og text word for word. Commit e80e48f. Deploy success, live tags verified, metadata check still 5 of 5, screenshots clean. Oct 23, 2026.
 - A8 Metadata consistency check. scripts/check-metadata.py added (repo only, verified 404 live). Five checks pass locally: name across title, og:title, and JSON-LD, jobTitle exactly Consultant, canonical equals og:url, sameAs matches the body profile links, meta description carries the name. Commit d5aca25. Deploy success, screenshots clean. Oct 23, 2026.
 - A4 Identity verification links. rel="me" added to the Boston Capital Strategy, LinkedIn, and X links. Commit 62b803d. Live verified 200 with three rel="me" links, BRIEF.md 404, screenshots clean. Oct 23, 2026.
 - D3 V1 built by Codex from BRIEF.md and audited by Muse. Four sections, Person JSON-LD, favicon, robots, sitemap, 404. Copy audit: zero em dashes and zero semicolons in visible copy. Rendered screenshots at 390x844 and 1280x900 read clean before the first push. Oct 23, 2026.
