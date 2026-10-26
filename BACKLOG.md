@@ -8,6 +8,10 @@ Seeded Oct 23, 2026 for the 10-cycle overnight run Rhett directed, from a ChatGP
 
 Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a second ChatGPT ideation pass through the signed-in Codex channel, deduplicated against everything Done or already queued. One raw gated idea (a Boston Capital Strategy backlink) duplicated G6 and was dropped, and one gated item (G14, analytics) was added by Muse to keep the batch at 20.
 
+Weekly scrum seeding, Oct 26, 2026: 5 new ideas from a ChatGPT ideation pass through the signed-in Codex channel. Two autonomous items kept (A24, A25). One raw idea (stable section links) was dropped as a duplicate: the four sections already carry stable ids (introduction, background, outside-work, elsewhere) in the live HTML. Two LinkedIn ideas were merged into one gated item (G18, in Ready Gated).
+
+- A24 Private factual source ledger. Keep a short repo-only record of the source for each biographical claim on the page, so future corrections are quick and evidence-based. P8 E2 Rank 74.
+- A25 Search-snippet exclusions. Mark incidental footer and utility text with data-nosnippet so search excerpts stay focused on Rhett's identity. P7 E1 Rank 67.
 - A19 Page weight budget. Set a transfer size budget for the published files and flag unexpected growth during weekly checks. P6 E3 Rank 51.
 - A20 Versioned asset references. A versioning convention for stylesheet and image references so returning visitors reliably receive updated assets after a change. P5 E3 Rank 41.
 - A3 Print stylesheet so the page prints as a clean one-page bio. P3 E2 Rank 24.
@@ -16,11 +20,14 @@ Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a secon
 
 Round 3 seeding, Oct 24, 2026: 3 new items (G15 to G17) from a competitor assessment of drorpoleg.com, antonyslumbers.com, and jamesdearsley.co.uk (research-notes/competitor-assessment-2026-10-24.md) run through a ChatGPT pass through the signed-in Codex channel. ChatGPT was asked for 10 to 15 high value items and returned only these 3 as clearing the bar, rejecting the rest as duplicates of existing items or as violations of the non-commercial scope. Per the standing rule, the short list is the answer and was not padded.
 
+Weekly scrum seeding, Oct 26, 2026: G18 added from the ChatGPT ideation pass (see Ready Autonomous note). Two raw LinkedIn ideas (website-field link, and a return link on a LinkedIn introduction or featured item) were merged into G18.
+
+- G18 LinkedIn link to this site. Rhett adds https://rhettd333.github.io/ to the website field on his LinkedIn profile, and optionally to one suitable LinkedIn introduction or featured item, so visitors checking his professional record can reach this page. Rhett makes the change in his own LinkedIn account. P9 E1 Rank 87.
 - G15 Compact dated public record in Background. Once a qualifying event exists, add up to three linked entries for verified talks, panels, bylines, or industry roles, replacing existing prose to preserve the word budget. Rhett approves each entry and link. Pattern borrowed: Slumbers dated timeline and Dearsley dated record strip (competitor assessment Oct 24, 2026). P9 E3 Rank 81.
-- G1 Confirm the applicable Deloitte requirements for both sites, including outside activities, publishing, independence, and any impression of a separate advisory business. Rhett handles this internally. P10 E3 Rank 71.
 - G3 Buy rhettdawson.com when Rhett is ready (availability and price checked first), point it at this site, and update canonical, Open Graph, and sitemap URLs in the same change. On hold by owner directive Oct 23, 2026: no domain yet. P9 E4 Rank 78.
 - G2 Approve the exact v1 biography copy, public links, and this draft MISSION.md. The v1 build ships as a draft under Rhett's build direction and this item records his word-level approval or edits. P9 E2 Rank 74.
 - G7 Name-search introduction refinement. Rhett approves a concise opening that makes his name, Boston location, current role, and focus immediately clear. Copy change, so gated. P9 E2 Rank 74.
+- G1 Confirm the applicable Deloitte requirements for both sites, including outside activities, publishing, independence, and any impression of a separate advisory business. Rhett handles this internally. P10 E3 Rank 71.
 - G11 Search Console setup. Rhett approves ownership verification and sitemap submission so indexing and name-search visibility can be checked directly. Needs his account action. P8 E3 Rank 71.
 - G16 Organizer event page attribution. After an actual speaking or moderating appearance, ask the organizer to publish Rhett's full name, accurate role, and a link to this site alongside the event record. Rhett approves the attribution and makes the ask. Pattern borrowed: Poleg proof wall and the cross-site index-not-engine pattern (competitor assessment Oct 24, 2026). P8 E3 Rank 71.
 - G8 Background specificity. Rhett approves one concrete detail about his engineering background that adds context without expanding employer claims. P7 E2 Rank 64.
