@@ -10,7 +10,6 @@ Round 2 seeding, Oct 23, 2026: 20 new items (A12 to A23, G7 to G14) from a secon
 
 Weekly scrum seeding, Oct 26, 2026: 5 new ideas from a ChatGPT ideation pass through the signed-in Codex channel. Two autonomous items kept (A24, A25). One raw idea (stable section links) was dropped as a duplicate: the four sections already carry stable ids (introduction, background, outside-work, elsewhere) in the live HTML. Two LinkedIn ideas were merged into one gated item (G18, in Ready Gated).
 
-- A24 Private factual source ledger. Keep a short repo-only record of the source for each biographical claim on the page, so future corrections are quick and evidence-based. P8 E2 Rank 74.
 - A25 Search-snippet exclusions. Mark incidental footer and utility text with data-nosnippet so search excerpts stay focused on Rhett's identity. P7 E1 Rank 67.
 - A19 Page weight budget. Set a transfer size budget for the published files and flag unexpected growth during weekly checks. P6 E3 Rank 51.
 - A20 Versioned asset references. A versioning convention for stylesheet and image references so returning visitors reliably receive updated assets after a change. P5 E3 Rank 41.
@@ -49,6 +48,7 @@ Weekly scrum seeding, Oct 26, 2026: G18 added from the ChatGPT ideation pass (se
 
 ## Done
 
+- A24 Private factual source ledger. research-notes/factual-source-ledger.md added (repo only, verified 404 live). Every published claim mapped to BRIEF.md or, for the headshot, BACKLOG.md G4, in page order, with a maintenance rule and an exclusions note that repeats no never-publish details. No published file changed, no em dash or semicolon, deploy workflow allowlist unchanged. Commit cde9b84. Deploy success, live home 200, BRIEF.md 404, ledger 404, screenshots clean on desktop and mobile. Oct 27, 2026.
 - A21 Production response checks. scripts/check-responses.py added (repo only, verified 404 live). All seven live files return 200 with the expected content types, including the headshot as image/jpeg and the sitemap as application/xml, 7 of 7 pass. Commit c3ec497. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A18 Portrait loading priority. fetchpriority high and decoding async added to the headshot image tag, one-line diff, no copy or layout change. Commit 856ac85. Deploy success, live HTML serves both attributes, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
 - A14 Redirect verification. scripts/check-redirects.py added (repo only, verified 404 live). The HTTP address returns a single 301 to the HTTPS homepage and the chain ends at 200 in one hop, 3 of 3 pass. Commit 5476150. Deploy success, screenshots byte-identical to the verified headshot baseline. Oct 23, 2026.
