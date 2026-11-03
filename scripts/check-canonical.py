@@ -61,7 +61,8 @@ def main():
         for block in page.json_ld:
             document = json.loads(block)
             person_urls.extend(node.get("url") for node in nodes(document, "Person"))
-            website_urls.extend(node.get("url") for node in nodes(document, "WebSite"))
+            website_urls.extend(node.get("url") for node in nodes(document, "WebSite")
+                                if node.get("@id") == "https://rhettd333.github.io/#website")
     except (OSError, UnicodeError, ValueError) as exc:
         page_errors.append(str(exc))
     try:

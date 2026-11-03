@@ -66,7 +66,7 @@ def main():
     nodes = graph if valid_graph else []
     people = [node for node in nodes if has_type(node, "Person")]
     websites = [node for node in nodes if has_type(node, "WebSite")]
-    report("2 Graph node types", valid_graph and len(people) == len(websites) == 1,
+    report("2 Graph node types", valid_graph and len(people) == 1 and len(websites) == 2,
            f"Person={len(people)}, WebSite={len(websites)}" if valid_graph
            else "missing or invalid @graph array")
 
@@ -78,7 +78,9 @@ def main():
            f"{len(ids)} unique node IDs" if unique_ids else "missing, invalid, or duplicate graph node @id")
 
     person = people[0] if len(people) == 1 else {}
-    website = websites[0] if len(websites) == 1 else {}
+    personal_sites = [node for node in websites
+                      if node.get("@id") == "https://rhettd333.github.io/#website"]
+    website = personal_sites[0] if len(personal_sites) == 1 else {}
     person_id = person.get("@id")
     publisher = website.get("publisher")
     publisher_id = publisher.get("@id") if isinstance(publisher, dict) else None
@@ -107,6 +109,16 @@ def main():
                 report("6 Live image HTTP 200", status == 200, f"HTTP {status}: {image_url}")
         except (HTTPError, URLError, OSError, ValueError) as exc:
             report("6 Live image HTTP 200", False, f"{image_url}: {exc}")
+
+    writing_url = "https://bostoncapitalstrategy.com"
+    writing_sites = [node for node in websites if node.get("url") == writing_url]
+    author = writing_sites[0].get("author") if len(writing_sites) == 1 else None
+    same_as = person.get("sameAs")
+    report("7 Writing WebSite author matches Person", len(writing_sites) == 1
+           and isinstance(author, dict) and isinstance(person_id, str)
+           and bool(person_id.strip()) and author.get("@id") == person_id
+           and isinstance(same_as, list) and writing_url not in same_as,
+           f"writing WebSite count={len(writing_sites)}, author={author!r}")
 
     print(f"Summary: {sum(results)}/{len(results)} checks passed.")
     return 0 if all(results) else 1

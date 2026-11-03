@@ -19,6 +19,7 @@ class MetadataParser(HTMLParser):
         self.canonicals = []
         self.json_ld = []
         self.profile_links = set()
+        self.writing_links = set()
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -43,8 +44,10 @@ class MetadataParser(HTMLParser):
                 host = (urlsplit(href).hostname or "").lower().removeprefix("www.")
             except ValueError:
                 return
-            if host in {"bostoncapitalstrategy.com", "linkedin.com", "x.com"}:
+            if host in {"linkedin.com", "x.com"}:
                 self.profile_links.add(href)
+            elif host == "bostoncapitalstrategy.com":
+                self.writing_links.add(href)
 
     def handle_data(self, data):
         if self.in_title:
@@ -76,21 +79,39 @@ def people(value):
         yield from people(value.get("@graph", []))
 
 
+def websites(value):
+    """Find WebSite nodes in standalone JSON-LD, arrays, or @graph documents."""
+    if isinstance(value, list):
+        for item in value:
+            yield from websites(item)
+    elif isinstance(value, dict):
+        types = value.get("@type", [])
+        if types == "WebSite" or isinstance(types, list) and "WebSite" in types:
+            yield value
+        yield from websites(value.get("@graph", []))
+
+
 def main():
     page = MetadataParser()
     persons = []
+    sites = []
     errors = []
     try:
         page.feed((Path(__file__).resolve().parent.parent / "index.html").read_text(encoding="utf-8"))
         page.close()
         for block in page.json_ld:
-            persons.extend(people(json.loads(block)))
+            document = json.loads(block)
+            persons.extend(people(document))
+            sites.extend(websites(document))
     except (OSError, UnicodeError, ValueError) as exc:
         errors.append(str(exc))
 
     person = persons[0] if len(persons) == 1 and not errors else {}
     name = "Rhett Dawson"
     same_as = person.get("sameAs")
+    writing_url = "https://bostoncapitalstrategy.com"
+    writing_sites = [site for site in sites if site.get("url") == writing_url]
+    author = writing_sites[0].get("author") if len(writing_sites) == 1 else None
     checks = [
         ("Title, og:title, and Person name carry Rhett Dawson",
          len(page.titles) == 1 and name in page.titles[0]
@@ -101,12 +122,17 @@ def main():
         ("Canonical link and og:url are identical",
          len(page.canonicals) == 1 and bool(page.canonicals[0])
          and page.canonicals == page.meta.get("og:url", [])),
-        ("Person sameAs matches the three body profile URLs as sets",
+        ("Person sameAs matches the two body identity profile URLs as sets",
          isinstance(same_as, list) and all(isinstance(url, str) for url in same_as)
-         and len(page.profile_links) == 3 and set(same_as) == page.profile_links),
+         and len(page.profile_links) == 2 and set(same_as) == page.profile_links),
         ("Meta description exists and contains Rhett Dawson",
          len(page.meta.get("description", [])) == 1
          and name in page.meta["description"][0]),
+        ("Boston Capital Strategy is an authored WebSite with its body link preserved",
+         len(writing_sites) == 1 and isinstance(author, dict)
+         and bool(person.get("@id")) and author.get("@id") == person.get("@id")
+         and isinstance(same_as, list) and writing_url not in same_as
+         and writing_url in page.writing_links),
     ]
     for label, passed in checks:
         print(f"{'PASS' if passed and not errors else 'FAIL'}: {label}")
