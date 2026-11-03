@@ -31,6 +31,9 @@ jobs:
           cp favicon.svg favicon-32x32.png icon-192x192.png icon-512x512.png apple-touch-icon.png dist/
           if [ -d assets ]; then cp -r assets dist/assets; fi
 
+      - name: Verify deployment artifact (privacy guard)
+        run: python3 scripts/check-deploy-artifact.py dist
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
