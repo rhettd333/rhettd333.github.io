@@ -12,6 +12,8 @@ Weekly scrum seeding, Oct 26, 2026: 5 new ideas from a ChatGPT ideation pass thr
 
 Weekly scrum seeding, Nov 2, 2026: 5 new ideas from a ChatGPT ideation pass through the signed-in Codex channel, all kept after dedupe against the full backlog and Done. Two autonomous items added (A26, A27). Three gated items added in Ready Gated (G19, G20, G21).
 
+Weekly scrum, Nov 9, 2026: 5 new ideas from a ChatGPT ideation pass through the signed-in Codex channel, all 5 dropped as duplicates of Done work (Person structured data is A6 and A15, search-result metadata is A5 and A8, canonical URL consistency is A13, keyboard and accessibility polish is A2, and an automated factual consistency check is A1, A8, and A24). No new items added.
+
 - A19 Page weight budget. Set a transfer size budget for the published files and flag unexpected growth during weekly checks. P6 E3 Rank 51.
 - A20 Versioned asset references. A versioning convention for stylesheet and image references so returning visitors reliably receive updated assets after a change. P5 E3 Rank 41.
 - A3 Print stylesheet so the page prints as a clean one-page bio. P3 E2 Rank 24.
@@ -46,7 +48,7 @@ Weekly scrum seeding, Nov 2, 2026: three gated items from the ChatGPT ideation p
 
 ## Icebox
 
-- G18 LinkedIn link to this site, PARKED Nov 2, 2026. Rhett adds https://rhettd333.github.io/ to the website field on his LinkedIn profile, and optionally to one suitable LinkedIn introduction or featured item. P9 E1 Rank 87. Asked in the Oct 26, 2026 scrum report and again in the Nov 2, 2026 scrum report, with no answer recorded either time, so parked under the weekly scrum rotation rule. Revives immediately if Rhett answers yes.
+- G18 LinkedIn link to this site, PARKED Nov 2, 2026, DECLINED Nov 3, 2026. Rhett adds https://rhettd333.github.io/ to the website field on his LinkedIn profile, and optionally to one suitable LinkedIn introduction or featured item. P9 E1 Rank 87. Asked in the Oct 26, 2026 scrum report and again in the Nov 2, 2026 scrum report, then Rhett answered on Nov 3, 2026 with "No, leave it parked." Stays in Icebox by his explicit decision. Do not re-ask in weekly scrums. Revives only if Rhett raises it himself.
 - A personal blog or notes feed. Coach verdict: no. The writing lives on Boston Capital Strategy.
 - A resume or CV download. Coach verdict: no. LinkedIn carries the record.
 - Separate hobby pages for music, sailing, woodworking, or jiu-jitsu. Coach verdict: no inventory pages.
