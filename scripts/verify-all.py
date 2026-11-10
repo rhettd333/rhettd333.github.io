@@ -16,6 +16,7 @@ SCRIPTS = (
     "check-indexability.py",
     "check-canonical.py",
     "check-page-weight.py",
+    "check-asset-versions.py",
 )
 
 
