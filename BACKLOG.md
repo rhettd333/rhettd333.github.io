@@ -14,6 +14,9 @@ Weekly scrum seeding, Nov 2, 2026: 5 new ideas from a ChatGPT ideation pass thro
 
 Weekly scrum, Nov 9, 2026: 5 new ideas from a ChatGPT ideation pass through the signed-in Codex channel, all 5 dropped as duplicates of Done work (Person structured data is A6 and A15, search-result metadata is A5 and A8, canonical URL consistency is A13, keyboard and accessibility polish is A2, and an automated factual consistency check is A1, A8, and A24). No new items added.
 
+Weekly scrum seeding, Nov 16, 2026: 5 new ideas from a ChatGPT ideation pass through the signed-in Codex channel. One autonomous item kept (A28). Two gated items kept (G22 and G23, in Ready Gated). Two raw ideas dropped: stable section links duplicate the live section ids (introduction, background, outside-work, elsewhere) and were already dropped for that reason on Oct 26, 2026, and native page sharing adds JavaScript and UI furniture outside the plain static design in BRIEF.md while browsers already provide sharing.
+
+- A28 Search-result correction procedure. Keep a short repo only procedure for requesting removal or refresh of an obsolete search snippet after a material biography correction, so a corrected page is not undermined by a stale search result. P7 E2 Rank 64.
 - A3 Print stylesheet so the page prints as a clean one-page bio. P3 E2 Rank 24.
 
 ## Ready Gated
@@ -24,15 +27,17 @@ Weekly scrum seeding, Oct 26, 2026: G18 added from the ChatGPT ideation pass (se
 
 Weekly scrum seeding, Nov 2, 2026: three gated items from the ChatGPT ideation pass: G19 (personal email signature link), G20 (existing Northeastern alumni profile backlink), G21 (reconsider the X link).
 
+Weekly scrum seeding, Nov 16, 2026: two gated items from the ChatGPT ideation pass: G22 (GitHub profile website field) and G23 (minimal save-contact card). See the Nov 16, 2026 note in Ready Autonomous for the full dedupe. G19 was removed from this lane on Nov 16, 2026 after Rhett declined it on Nov 11, 2026 (see Icebox).
+
 - G15 Compact dated public record in Background. Once a qualifying event exists, add up to three linked entries for verified talks, panels, bylines, or industry roles, replacing existing prose to preserve the word budget. Rhett approves each entry and link. Pattern borrowed: Slumbers dated timeline and Dearsley dated record strip (competitor assessment Oct 24, 2026). P9 E3 Rank 81.
 - G3 Buy rhettdawson.com when Rhett is ready (availability and price checked first), point it at this site, and update canonical, Open Graph, and sitemap URLs in the same change. On hold by owner directive Oct 23, 2026: no domain yet. P9 E4 Rank 78.
-- G19 Personal email signature link. Rhett adds https://rhettd333.github.io/ to his personal email signature so new contacts have a direct route to his identity page. Rhett makes the change in his own mail account. P8 E1 Rank 77.
 - G2 Approve the exact v1 biography copy, public links, and this draft MISSION.md. The v1 build ships as a draft under Rhett's build direction and this item records his word-level approval or edits. P9 E2 Rank 74.
 - G7 Name-search introduction refinement. Rhett approves a concise opening that makes his name, Boston location, current role, and focus immediately clear. Copy change, so gated. P9 E2 Rank 74.
 - G1 Confirm the applicable Deloitte requirements for both sites, including outside activities, publishing, independence, and any impression of a separate advisory business. Rhett handles this internally. P10 E3 Rank 71.
 - G11 Search Console setup. Rhett approves ownership verification and sitemap submission so indexing and name-search visibility can be checked directly. Needs his account action. P8 E3 Rank 71.
 - G16 Organizer event page attribution. After an actual speaking or moderating appearance, ask the organizer to publish Rhett's full name, accurate role, and a link to this site alongside the event record. Rhett approves the attribution and makes the ask. Pattern borrowed: Poleg proof wall and the cross-site index-not-engine pattern (competitor assessment Oct 24, 2026). P8 E3 Rank 71.
 - G21 Reconsider the X link. Remove X from the page and the identity metadata unless Rhett considers it a useful, current destination for professional visitors. BRIEF.md currently lists the X link as part of v1, so Rhett decides. P7 E1 Rank 67.
+- G22 GitHub profile website field. Rhett points the public website field on his GitHub profile (rhettd333) to https://rhettd333.github.io/ so visitors who find the hosting account have a clear route to the person page. Rhett makes the change in his own account. P7 E1 Rank 67.
 - G8 Background specificity. Rhett approves one concrete detail about his engineering background that adds context without expanding employer claims. P7 E2 Rank 64.
 - G9 Outside-work detail. Rhett approves one specific personal interest that gives new Boston contacts a natural conversation starter. P7 E2 Rank 64.
 - G10 Elsewhere link descriptions. Rhett approves brief explanations distinguishing the Boston Capital Strategy writing from the LinkedIn professional record. P7 E2 Rank 64.
@@ -40,6 +45,7 @@ Weekly scrum seeding, Nov 2, 2026: three gated items from the ChatGPT ideation p
 - G6 Add an author backlink on Boston Capital Strategy, "Written by Rhett Dawson", linking here, so ownership of the expert site is plain. P6 E3 Rank 51.
 - G14 Privacy-respecting analytics. Rhett approves a lightweight, cookie-free analytics setup so name-search traffic is visible. Any vendor choice is his. P6 E3 Rank 51.
 - G17 Earned third-party quote. When a substantive, attributable quote about a public contribution exists, consider one short excerpt with the speaker's permission and a source link inside Background, replacing equivalent self-description prose. Pattern borrowed: Slumbers attributed quotes (competitor assessment Oct 24, 2026). P6 E3 Rank 51.
+- G23 Minimal save-contact card. Offer a downloadable vCard containing only already public details (name, Consultant role, Boston, and this website) with no phone number and no email address, so a new contact can save the identity page details in one tap. Contact details are gated, so Rhett approves the exact fields first. P6 E3 Rank 51.
 - G5 Add a short Now section saying what he is working on this season, refreshed by hand. Risk of going stale is the reason this is gated. P5 E4 Rank 38.
 - G13 Personal visual identity. Rhett approves a restrained typography and color direction that makes the page feel recognizably his while preserving its simplicity. P5 E5 Rank 35.
 - G12 Portrait retake. Rhett approves a replacement portrait with a clear brief for expression, framing, lighting, and background. Supersedes the studio backdrop version only if he prefers the retake. P5 E6 Rank 32.
@@ -47,6 +53,7 @@ Weekly scrum seeding, Nov 2, 2026: three gated items from the ChatGPT ideation p
 ## Icebox
 
 - G18 LinkedIn link to this site, PARKED Nov 2, 2026, DECLINED Nov 3, 2026. Rhett adds https://rhettd333.github.io/ to the website field on his LinkedIn profile, and optionally to one suitable LinkedIn introduction or featured item. P9 E1 Rank 87. Asked in the Oct 26, 2026 scrum report and again in the Nov 2, 2026 scrum report, then Rhett answered on Nov 3, 2026 with "No, leave it parked." Stays in Icebox by his explicit decision. Do not re-ask in weekly scrums. Revives only if Rhett raises it himself.
+- G19 Personal email signature link, DECLINED Nov 11, 2026. Rhett adds https://rhettd333.github.io/ to his personal email signature so new contacts have a direct route to his identity page. P8 E1 Rank 77. Asked in the Nov 9, 2026 scrum report, then Rhett answered on Nov 11, 2026 with "No, leave my signature as is." Stays in Icebox by his explicit decision. Do not re-ask in weekly scrums. Revives only if Rhett raises it himself.
 - A personal blog or notes feed. Coach verdict: no. The writing lives on Boston Capital Strategy.
 - A resume or CV download. Coach verdict: no. LinkedIn carries the record.
 - Separate hobby pages for music, sailing, woodworking, or jiu-jitsu. Coach verdict: no inventory pages.
