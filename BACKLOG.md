@@ -16,6 +16,12 @@ Weekly scrum, Nov 9, 2026: 5 new ideas from a ChatGPT ideation pass through the 
 
 Weekly scrum seeding, Nov 16, 2026: 5 new ideas from a ChatGPT ideation pass through the signed-in Codex channel. One autonomous item kept (A28). Two gated items kept (G22 and G23, in Ready Gated). Two raw ideas dropped: stable section links duplicate the live section ids (introduction, background, outside-work, elsewhere) and were already dropped for that reason on Oct 26, 2026, and native page sharing adds JavaScript and UI furniture outside the plain static design in BRIEF.md while browsers already provide sharing.
 
+Weekly scrum seeding, Nov 23, 2026: 5 new ideas from a ChatGPT ideation pass through the signed-in Codex channel. Three autonomous items kept (A29, A30, A31). One gated item kept (G24, in Ready Gated). One raw idea dropped: section deep links duplicate the live section ids (introduction, background, outside-work, elsewhere) and were already dropped for that reason on Oct 26, 2026 and again on Nov 16, 2026.
+
+- A29 Fact-change checklist. Add a short private checklist in research-notes listing every place a public fact appears on the page, in metadata, and in structured data, so a role, location, education, or profile change is made completely in one pass. Repo only. P8 E2 Rank 74.
+- A30 Readable fallback for failed assets. Verify the page stays legible and complete if the stylesheet or the portrait fails to load, and fix any gap found without changing visible copy. P6 E3 Rank 51.
+- A31 Copy-and-paste check. Verify that copying the introduction and the profile links from the live page produces clean and usable text on desktop and mobile, and fix any markup gap found without changing visible copy. P5 E2 Rank 44.
+
 ## Ready Gated
 
 Round 3 seeding, Oct 24, 2026: 3 new items (G15 to G17) from a competitor assessment of drorpoleg.com, antonyslumbers.com, and jamesdearsley.co.uk (research-notes/competitor-assessment-2026-10-24.md) run through a ChatGPT pass through the signed-in Codex channel. ChatGPT was asked for 10 to 15 high value items and returned only these 3 as clearing the bar, rejecting the rest as duplicates of existing items or as violations of the non-commercial scope. Per the standing rule, the short list is the answer and was not padded.
@@ -26,10 +32,12 @@ Weekly scrum seeding, Nov 2, 2026: three gated items from the ChatGPT ideation p
 
 Weekly scrum seeding, Nov 16, 2026: two gated items from the ChatGPT ideation pass: G22 (GitHub profile website field) and G23 (minimal save-contact card). See the Nov 16, 2026 note in Ready Autonomous for the full dedupe. G19 was removed from this lane on Nov 16, 2026 after Rhett declined it on Nov 11, 2026 (see Icebox).
 
-- G15 Compact dated public record in Background. Once a qualifying event exists, add up to three linked entries for verified talks, panels, bylines, or industry roles, replacing existing prose to preserve the word budget. Rhett approves each entry and link. Pattern borrowed: Slumbers dated timeline and Dearsley dated record strip (competitor assessment Oct 24, 2026). P9 E3 Rank 81.
+Weekly scrum seeding, Nov 23, 2026: one gated item from the ChatGPT ideation pass: G24 (periodic human fact review). See the Nov 23, 2026 note in Ready Autonomous for the full dedupe. G15 was moved from this lane to Icebox on Nov 23, 2026 after being asked twice without an answer (see Icebox).
+
 - G3 Buy rhettdawson.com when Rhett is ready (availability and price checked first), point it at this site, and update canonical, Open Graph, and sitemap URLs in the same change. On hold by owner directive Oct 23, 2026: no domain yet. P9 E4 Rank 78.
 - G2 Approve the exact v1 biography copy, public links, and this draft MISSION.md. The v1 build ships as a draft under Rhett's build direction and this item records his word-level approval or edits. P9 E2 Rank 74.
 - G7 Name-search introduction refinement. Rhett approves a concise opening that makes his name, Boston location, current role, and focus immediately clear. Copy change, so gated. P9 E2 Rank 74.
+- G24 Periodic human fact review. Rhett approves a lightweight twice yearly human review of the public biography against his current circumstances, with any change proposed only when a fact has actually changed. Gated because only Rhett can confirm his own facts. P8 E2 Rank 74.
 - G1 Confirm the applicable Deloitte requirements for both sites, including outside activities, publishing, independence, and any impression of a separate advisory business. Rhett handles this internally. P10 E3 Rank 71.
 - G11 Search Console setup. Rhett approves ownership verification and sitemap submission so indexing and name-search visibility can be checked directly. Needs his account action. P8 E3 Rank 71.
 - G16 Organizer event page attribution. After an actual speaking or moderating appearance, ask the organizer to publish Rhett's full name, accurate role, and a link to this site alongside the event record. Rhett approves the attribution and makes the ask. Pattern borrowed: Poleg proof wall and the cross-site index-not-engine pattern (competitor assessment Oct 24, 2026). P8 E3 Rank 71.
@@ -49,6 +57,7 @@ Weekly scrum seeding, Nov 16, 2026: two gated items from the ChatGPT ideation pa
 
 ## Icebox
 
+- G15 Compact dated public record in Background, PARKED Nov 23, 2026. Once a qualifying event exists, add up to three linked entries for verified talks, panels, bylines, or industry roles, replacing existing prose to preserve the word budget. Rhett approves each entry and link. P9 E3 Rank 81. Asked in the Nov 16, 2026 scrum report and again in the Nov 23, 2026 scrum report with no answer recorded. Parked under the rotation rule. Do not re-ask in weekly scrums. Revives if Rhett answers the Nov 23 question, raises it himself, or a qualifying event occurs.
 - G18 LinkedIn link to this site, PARKED Nov 2, 2026, DECLINED Nov 3, 2026. Rhett adds https://rhettd333.github.io/ to the website field on his LinkedIn profile, and optionally to one suitable LinkedIn introduction or featured item. P9 E1 Rank 87. Asked in the Oct 26, 2026 scrum report and again in the Nov 2, 2026 scrum report, then Rhett answered on Nov 3, 2026 with "No, leave it parked." Stays in Icebox by his explicit decision. Do not re-ask in weekly scrums. Revives only if Rhett raises it himself.
 - G19 Personal email signature link, DECLINED Nov 11, 2026. Rhett adds https://rhettd333.github.io/ to his personal email signature so new contacts have a direct route to his identity page. P8 E1 Rank 77. Asked in the Nov 9, 2026 scrum report, then Rhett answered on Nov 11, 2026 with "No, leave my signature as is." Stays in Icebox by his explicit decision. Do not re-ask in weekly scrums. Revives only if Rhett raises it himself.
 - A personal blog or notes feed. Coach verdict: no. The writing lives on Boston Capital Strategy.
