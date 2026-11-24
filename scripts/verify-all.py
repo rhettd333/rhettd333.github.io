@@ -12,6 +12,7 @@ import sys
 
 SCRIPTS = (
     "check-metadata.py",
+    "check-fallback.py",
     "check-links.py",
     "check-indexability.py",
     "check-canonical.py",
